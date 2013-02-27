@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html >
+<head>
+
+	<!-- Font -->
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8"/>
+	<title>Drag and Drop</title>
+
+	<link rel="stylesheet" href="assets/css/smoothness/jquery-ui-1.8.24.custom.css"/>
+	<link rel="stylesheet/less" type="text/css" href="myStyle.less">
+	<script type="text/javascript" src="assets/js/less.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui-1.8.24.custom.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="myScript.js"></script>
+	
+</head>
+
+<body>
+
+	<section id='images'>
+		<div class='imageBox'>
+			<div class='avatar'></div>
+			<p></p>
+		</div>
+
+		<div class='imageBox'>
+			<div class='avatar'></div>
+			<p></p>
+		</div>
+
+		<div class='imageBox'>
+			<div class='avatar'></div>
+			<p></p>
+		</div>
+
+		<div class='imageBox'>
+			<div class='avatar'></div>
+			<p></p>
+		</div>
+		<br class='clear'/>
+	</section>
+
+	<section id='controller'>
+		
+		<div id="panel">
+			<button id='reset'>Reset</button>
+			<button id="check">Check result!</button>
+			<button id="newgame">New Game</button>
+		</div>
+		<h1>Matching Words</h1>
+		<div id="result"></div>
+		<div class='clear'></div>
+	</section>
+
+	<section id='words'>
+		<div class='wordBox' >
+			<header></header>
+			<div id='word_1' class='dropBox'></div> 
+		</div>
+
+		<div class='wordBox' >
+			<header></header>
+			<div id='word_2' class='dropBox'></div> 	
+		</div>
+
+		<div class='wordBox' >
+			<header></header>
+			<div id='word_3' class='dropBox'></div> 
+		</div>
+
+		<div class='wordBox' >
+			<header></header>
+			<div id='word_4' class='dropBox'></div> 
+		</div>
+
+		<br class='clear'/>
+	</section>
+
+	
+</body>
+</html>

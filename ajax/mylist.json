@@ -1,0 +1,48 @@
+{
+  "listWords":[
+	  {
+	  	"word":"apple",
+	  	"image_url":"assets/apple.jpg"
+	  },
+
+	  {
+	  	"word":"dog",
+	  	"image_url":"assets/dog.jpg"
+	  },
+
+	  {
+	  	"word":"car",
+	  	"image_url":"assets/car.jpg"
+	  },
+
+	  {
+	  	"word":"family",
+	  	"image_url":"assets/family.jpg"
+	  },
+
+	  {
+	  	"word":"camera",
+	  	"image_url":"assets/camera.jpg"
+	  },
+
+	  {
+	  	"word":"socks",
+	  	"image_url":"assets/socks.jpg"
+	  },
+
+	  {
+	  	"word":"table",
+	  	"image_url":"assets/table.jpg"
+	  },
+
+	  {
+	  	"word":"ball",
+	  	"image_url":"assets/ball.jpg"
+	  },
+
+	  {
+	  	"word":"eye",
+	  	"image_url":"assets/eye.jpg"
+	  }
+  ]
+}

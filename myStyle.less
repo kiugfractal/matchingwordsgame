@@ -1,0 +1,164 @@
+@peopleBoxColor:#FCFBE3;
+@taskBoxColor:#FBB829;
+
+.rounded-corners(@radius){
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-ms-border-radius:@radius;
+	-o-border-radius:@radius;
+	border-radius:@radius;
+}
+
+
+.box-shadow (@x, @y, @blur, @spread, @color){
+	box-shadow:@arguments;
+	-moz-box-shadow:@arguments;
+	-webkit-box-shadow:@arguments;
+}
+
+
+.grad-task-box(){
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+/*------------------------------------------------------------------*/
+/*---------------------General Style-----------------------*/
+body{
+	margin:0 auto;
+	background-image:url('assets/img/retina_wood.png');
+	font-size:100%;
+	font-family: Arial, sans-serif;
+}
+
+
+section,article{
+	margin:0 auto;
+}
+
+h1,h2,h3,h4{
+	font-weight:normal;
+}
+
+
+ /*------------------------------------------------------------------*/
+ /*---------------------image's box---------------------*/
+
+#images{
+	margin:0 auto;
+	width:980px;
+}
+
+.imageBox{
+	margin:10px 10px 10px 10px;
+	width:200px;
+	background-color: @peopleBoxColor;
+	padding:10px;
+	.rounded-corners(4px);
+	.box-shadow(0px,0px,2px,1px,rgba(1,1,1,0.4));
+	float:left;
+}
+
+.imageBox:first-child{
+	margin-left:0;
+}
+
+.avatar{
+	background-image:url('assets/img/avatar200x200.png');
+	width:200px;
+	height:200px;
+	border-bottom:1px solid lighten(#333333,60%);
+	.rounded-corners(2px);
+
+}
+
+#images p{
+	padding-left:50px;
+}
+
+.clear{
+	clear:both;
+}
+
+/*------------------------------------------------------------------*/
+/*---------------------Tasks'box---------------------*/
+
+ #words{
+ 	// padding-top:150px;
+ 	margin:0 auto;
+ 	width:980px;
+ }
+
+ .wordBox{
+ 	//background-color:@taskBoxColor;
+ 	margin:10px;
+ 	width:222px;
+ 	height:290px;
+ 	.grad-task-box();
+ 	.rounded-corners(4px);
+ 	border-bottom:1px solid lighten(#333333,40%);
+ 	float:left;
+
+ }
+
+.wordBox:first-child{
+	margin-left:0;
+}
+
+ .wordBox header{
+ 	font-family:'Dancing Script', cursive;
+ 	font-size:2.5em;
+ 	//width:220px;
+ 	padding:0 60px;
+ 	border-bottom:1px solid lighten(#333333,60%);
+ 	color:lighten(#333333,20%);
+
+ }
+
+ .dropBox{
+ 	height:237px;
+ }
+
+
+
+ /*------------------------------------------------------------------*/
+ /*---------------------Controller'box---------------------*/
+
+ #controller{
+ 	margin:0 auto;
+ 	width: 980px;
+	margin-top:20px;
+ }
+
+ #controller #panel button{
+ 	font-family:'Dancing Script', cursive;
+ 	font-size:24px;
+ 	width:200px;
+	background-color:white;
+	.rounded-corners(4px);
+ }
+
+#controller #panel{
+	float:left;
+}
+
+#controller #result{
+	opacity:0;
+	padding-left:100px;
+	padding-top:20px;
+	float:left;
+	font-family:'Dancing Script', cursive;
+ 	font-size: 3.3em;
+}
+
+ #controller h1{
+ 	float:right;
+ 	font-family:Mr Dafoe, sans-serif;
+ 	font-size: 3.5em;
+ 	text-shadow: 0 -1px 0 #333;
+ }
